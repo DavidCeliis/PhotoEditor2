@@ -54,7 +54,7 @@ namespace PhotoEditor2
             {
                 for (int x = 0; x < width; x++)
                 {
-                    if (rand.NextDouble() <= 0.4)
+                    if (rand.NextDouble() <= 0.7)
                     {
                         byte[] pixel = BitConverter.GetBytes(rand.Next());
                         WriteableImage.WritePixels(new Int32Rect(x, y, 1, 1), pixel, 4, 0);
@@ -70,6 +70,7 @@ namespace PhotoEditor2
             Red,
             Blue
         }
+        //tohle prostě nefunguje
 
         //private void ApplyColorButton_Click(object sender, RoutedEventArgs e)
         //{
