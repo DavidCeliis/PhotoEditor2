@@ -36,6 +36,7 @@ namespace PhotoEditor2
         private void Reset_Click(object sender, RoutedEventArgs e)
         {
             MainImage.Source = OriginalImage;
+            WriteableImage = new WriteableBitmap(OriginalImage);
         }
         private void RandomizePixelsButton_Click(object sender, RoutedEventArgs e)
         {
